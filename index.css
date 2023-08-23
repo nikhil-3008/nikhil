@@ -46,7 +46,22 @@
     stroke-width: 0.5px;
     stroke: url(#gradient_svg);
   }
-  
+  .image-container {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust this for desired height */
+}
+.nikhil{
+ width: 120%;
+}
+@media (max-width: 768px) {
+  .nikhil {
+      width: 100%; /* Adjust the width as needed */
+  }
+}
+
+
   @media (max-width: 767px) {
     g {
       stroke-width: 2px;
