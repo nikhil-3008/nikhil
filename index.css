@@ -1,0 +1,207 @@
+/* Center the navbar and add padding */
+.body{
+  overflow-x: hidden;
+  margin: 0;
+}
+.navbar {
+    text-align: center;
+    margin: 20px 30px; /* Add margin and center horizontally */
+  }
+  
+  /* Add colorful border and coloring hover effect to navbar */
+  .navbar {
+    border: 2px solid #FFD95A; /* Change color code as desired */
+    border-radius: 15px; /* Add rounded corners */
+  }
+  
+  .nav-link span {
+    transition: color 0.3s; /* Add smooth color transition */
+  }
+  
+  .nav-link:hover span {
+    color: #FFD95A; /* Change color code as desired */
+  }
+
+  #canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .services-1{
+    border: 2px solid #ffbd39;
+    border-radius: 20px;
+  }
+ 
+  .waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  g {
+    fill: none;
+    stroke-width: 0.5px;
+    stroke: url(#gradient_svg);
+  }
+  
+  @media (max-width: 767px) {
+    g {
+      stroke-width: 2px;
+      stroke: url(#gradient_svg);
+    }
+    .waves{
+      width: 100%;
+    height: 80%;
+    }
+  }
+  
+  .hero {
+    position: relative;
+    overflow: hidden;
+  }
+  #skills-section{
+    overflow: hidden;
+  }
+ 
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container {
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 10px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container:hover img {
+    transform: rotateY(20deg) translateX(-20px) translateZ(40px);
+  }
+
+
+ /* Default styles for the Swiper container */
+swiper-container {
+  width: 350px;
+  height: 320px;
+}
+
+/* Media query for mobile view */
+@media screen and (max-width: 767px) {
+  swiper-container {
+    width: 250px; /* Set to 100% width for mobile view */
+    height: 320px; /* Allow the height to adjust based on content */
+  }
+}
+
+
+  swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px; /* Add padding to create space between cards */
+    margin: 5px; /* Add margin to separate the cards */
+  }
+
+  swiper-slide:nth-child(1n) {
+    background-color: rgb(255, 0, 47);
+    
+    
+  }
+  .background-slide1{
+    background-image: url('images/graphics.png');
+    display: flex;
+   
+    justify-content: space-between;
+    background-size: cover;
+     background-position: center;
+     border: 2px solid #840a79;
+    
+
+  }
+
+  .background-slide2 {
+    background-image: url('images/aids.png');
+  
+    background-position: center;
+    border: 2px solid #064a53;
+   
+  }
+  .background-slide3 {
+    background-image: url('images/moneyniti.png');
+   background-size: cover;
+    background-position: center;
+    border: 2px solid #01a5bb;
+   
+  }
+  
+  swiper-slide:nth-child(4n) {
+    background-color: rgb(9, 9, 9);
+  }
+
+  swiper-slide:nth-child(5n) {
+    background-color: rgb(35, 99, 19);
+  }
+
+  swiper-slide:nth-child(6n) {
+    background-color: rgb(0, 68, 255);
+  }
+
+  swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+  }
+
+  swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+  }
+ 
+
+  .github-link,
+  .demo-link {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  swiper-slide:hover .github-link,
+  swiper-slide:hover .demo-link {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+  }
+ /* Center align the contact section */
+#contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0b0b0b; /* Optional background color */
+}
+
+/* Add a yellow border to the contact form */
+
+
+
+
+  
